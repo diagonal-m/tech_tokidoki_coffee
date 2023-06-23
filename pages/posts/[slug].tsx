@@ -14,6 +14,7 @@ import Link from 'next/link';
 
 import rehypeParse from 'rehype-parse';
 import rehypeReact from 'rehype-react';
+import { toc } from 'mdast-util-toc';
 
 type GetStaticPropsProps = {
   params: any
@@ -22,8 +23,16 @@ type GetStaticPropsProps = {
 type PostProps = {
   frontMatter: any,
   content: any,
-  slug: any
+  slug: any,
+  toc: any
 }
+
+const getToc = (options: any) => {
+  return (node: any) => {
+    const result = toc(node, options);
+    node.children = [result.map];
+  };
+};
 
 export async function getStaticProps({ params }: GetStaticPropsProps) {
   const file = fs.readFileSync(`posts/${params.slug}.md`, 'utf-8');
@@ -39,9 +48,19 @@ export async function getStaticProps({ params }: GetStaticPropsProps) {
     .use(rehypeSlug)
     .use(rehypeStringify, { allowDangerousHtml: true })
     .process(content);
+  
+  const toc = await unified()
+    .use(remarkParse)
+    .use(getToc, {
+      heading: '目次',
+      tight: true,
+    })
+    .use(remarkRehype)
+    .use(rehypeStringify)
+    .process(content);
 
   return {
-    props: { frontMatter: data, content: result.toString(), slug: params.slug },
+    props: { frontMatter: data, content: result.toString(), toc: toc.toString(), slug: params.slug },
   };
 }
 
@@ -59,7 +78,7 @@ export async function getStaticPaths() {
   };
 }
 
-const Post = ({ frontMatter, content, slug }: PostProps) => {
+const Post = ({ frontMatter, content, slug, toc }: PostProps) => {
   return (
     <>
       <NextSeo
@@ -100,7 +119,15 @@ const Post = ({ frontMatter, content, slug }: PostProps) => {
             </span>
           ))}
         </div>
-        {toReactNode(content)}
+        <div className="grid grid-cols-12">
+          <div className="col-span-9">{toReactNode(content)}</div>
+          <div className="col-span-3">
+            <div
+              className="sticky top-[50px]"
+              dangerouslySetInnerHTML={{ __html: toc }}
+            />
+          </div>
+        </div>
       </div>
     </>
   );
