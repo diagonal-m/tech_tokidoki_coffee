@@ -5,6 +5,8 @@ description: "Next.jsでmarkdownファイルを利用したブログの構築手
 image: nextjs.png
 ---
 
+## 目次
+
 Next.js を使って Markdown のブログサイトの構築を一から行なっていきます。
 
 ## Next.js の準備
@@ -12,3 +14,12 @@ Next.js を使って Markdown のブログサイトの構築を一から行な�
 ### プロジェクトの作成
 
 npx create-next-app コマンドを利用して Next.js プロジェクトの作成を行います。
+
+```bash
+$ npx create-next-app
+```
+
+```python[class="line-numbers"]
+def hello:
+  print('hello world')
+```

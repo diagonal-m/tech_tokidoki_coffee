@@ -20,9 +20,13 @@ export const getStaticProps = () => {
     };
   });
 
+  const sortedPosts = posts.sort((postA, postB) =>
+    new Date(postA.frontMatter.date) > new Date(postB.frontMatter.date) ? -1 : 1
+  );
+
   return {
     props: {
-      posts,
+      posts: sortedPosts,
     },
   };
 };
@@ -30,7 +34,7 @@ export const getStaticProps = () => {
 export default function Home({ posts }: PostsProps) {
   return (
     <div className="my-8">
-      <div className="grid grid-cols-3">
+      <div className="grid grid-cols-3 gap-4">
         {posts.map((post: any) => (
           <PostCard key={post.slug} post={post} />
         ))}
