@@ -31,7 +31,7 @@ export default function Home({ posts }: PostsProps) {
   return (
     <div className="my-8">
       <div className="grid grid-cols-3">
-        {posts.map((post: post) => (
+        {posts.map((post: any) => (
           <PostCard key={post.slug} post={post} />
         ))}
       </div>
