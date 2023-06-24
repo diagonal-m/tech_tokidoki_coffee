@@ -1,5 +1,6 @@
 import siteMetadata from '@/data/siteMetadata'
 import headerNavLinks from '@/data/headerNavLinks'
+import Image from 'next/image'
 // TODO 後で消す
 // import Logo from '@/data/logo.svg'
 import Link from './Link'
@@ -13,7 +14,13 @@ const Header = () => {
         <Link href="/" aria-label={siteMetadata.headerTitle}>
           <div className="flex items-center justify-between">
             <div className="mr-3">
-              <img src='/static/images/ametokidokicoffee.png' className="w-14 h-14 rounded-full" />
+              <Image
+                src="/static/images/ametokidokicoffee.png"
+                alt="logo"
+                width={100}
+                height={100}
+                className="h-14 w-14 rounded-full"
+              />
             </div>
             {typeof siteMetadata.headerTitle === 'string' ? (
               <div className="hidden h-6 text-2xl font-semibold sm:block">
