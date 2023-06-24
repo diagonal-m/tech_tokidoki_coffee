@@ -1,16 +1,47 @@
-import Link from 'next/link';
+import siteMetadata from '@/data/siteMetadata'
+import headerNavLinks from '@/data/headerNavLinks'
+// TODO 後で消す
+// import Logo from '@/data/logo.svg'
+import Link from './Link'
+import MobileNav from './MobileNav'
+import ThemeSwitch from './ThemeSwitch'
 
 const Header = () => {
   return (
-    <header className="sticky top-0 border-b z-10 bg-white">
-      <div className="max-w-4xl mx-auto flex justify-between items-center h-12">
-        <Link href="/">
-          LOGO
+    <header className="flex items-center justify-between py-10">
+      <div>
+        <Link href="/" aria-label={siteMetadata.headerTitle}>
+          <div className="flex items-center justify-between">
+            <div className="mr-3">
+              <img src='/static/images/ametokidokicoffee.png' className="w-14 h-14 rounded-full" />
+            </div>
+            {typeof siteMetadata.headerTitle === 'string' ? (
+              <div className="hidden h-6 text-2xl font-semibold sm:block">
+                {siteMetadata.headerTitle}
+              </div>
+            ) : (
+              siteMetadata.headerTitle
+            )}
+          </div>
         </Link>
-        <div>Link</div>
+      </div>
+      <div className="flex items-center text-base leading-5">
+        <div className="hidden sm:block">
+          {headerNavLinks.map((link) => (
+            <Link
+              key={link.title}
+              href={link.href}
+              className="p-1 font-medium text-gray-900 dark:text-gray-100 sm:p-4"
+            >
+              {link.title}
+            </Link>
+          ))}
+        </div>
+        <ThemeSwitch />
+        <MobileNav />
       </div>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
