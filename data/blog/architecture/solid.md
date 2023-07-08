@@ -1,5 +1,5 @@
 ---
-title: SOLID原則を理解したい
+title: SOLID原則を理解したい~単一責任の原則編~
 date: '2023-07-03'
 tags: ['architecture', 'solid']
 draft: false
