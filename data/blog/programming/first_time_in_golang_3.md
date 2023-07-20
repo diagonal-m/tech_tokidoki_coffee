@@ -10,10 +10,10 @@ summary: 動的型付け言語しか実務で扱ったことのないエンジ�
 
 <TOCInline toc={props.toc} exclude="目次" toHeading={3} />
 
-## 関数
+# 関数
 Go言語で関数を宣言するには、`func`キーワードを使用する。関数は引数と戻り値の型を指定することができる。そして、関数の本体は波括弧で囲む
 
-### 関数の宣言と呼び出し
+## 関数の宣言と呼び出し
 
 ```go
 func greet(name string) string {
@@ -124,7 +124,7 @@ func main() {
 2 1 <nil>
 ```
 
-### 関数は値
+## 関数は値
 他の多くの言語と同様に、Go言語の関数は「値(value)」である。関数の型はキーワード`func`、および引数と戻り値の型によって決まる。この組み合わせを関数の**シグネチャ**と呼ぶ。2つの関数の引数と戻り値の数と型が同じならば、両者のシグネチャが一致することになる。  
 
 
@@ -151,5 +151,119 @@ func main() {
 ```
 
 このようなことは普通しない。無名関数を定義してすぐ実行するくらいなら、無名関数を使わずにコードをそのまま実行するだろう。ところが変数に代入しない無名関数が役立つ場合が少なくとも2つはある。
+
+## クロージャ
+関数f内で定義された関数gは、外側の関数f内で定義された変数にアクセスしたり変更したりできる。このような場合、関数内で定義された関数gのことを**クロージャ(closure)**と呼ぶ。
+
+クロージャの機能のひとつは関数のスコープを制限することである。「関数fからしか呼び出されないが、関数fから何度も呼び出される」とき、呼び出される関数gを「隠して」おくのに「関数内の関数」が使える。隠しておけばパッケージレベルでの宣言の数が減るので、名前の衝突の危険が少なくなる。
+
+もうひとつ重要な用途がある。クロージャは別の関数に渡されたり、関数から返されたりすることで興味深いことができるようになる。関数の中で定義された変数をその環境ごと包みこんで持ち出して、関数の外で使えるようになる。
+
+### 関数引数
+関数が値であって、しかも引数と戻り値の型により関数の型が特定できるので、関数を別の関数に引数として渡すことができる。ローカル変数を参照するクロージャを作成してそのクロージャを別の関数に渡すことで、局所変数お外に持ち出せるようになる。これは非常に有用なパターンで、標準ライブラリでも使われている。
+
+ひとつの例がスライスのソートである。標準ライブラリのパッケージ`sort`の中に`sort.Slice`という名前の関数がある。この関数は引数にスライスと関数をとり、渡された関数はスライスのソートに使われる。このsort.Sliceがどのように働くか、2つの異なるフィールドをもった構造体のスライスをソートする例でみる。
+
+クロージャを使って同じデータを異なる方法でどのようにソートするのか見てみる。  
+まず簡単な型を定義し、その型の値のスライスを定義し、そのスライスを出力する。
+
+```go
+type Person struct {
+  FirstName string
+	LastName string
+	Age int
+}
+
+
+func main() {
+	people := []Person{
+		{"Pat", "Patterson", 37},
+		{"Tracy", "Bobbert", 23},
+		{"Fred", "Fredson", 18},
+	}
+	fmt.Println("初期データ")
+	fmt.Println(people)
+
+	// 姓(LastName)でソート
+	sort.Slice(people, func(i int, j int) bool {
+		return people[i].LastName < people[j].LastName
+	})
+	fmt.Println("姓(LastName)でソート")
+	fmt.Println(people)
+}
+```
+
+```bash:実行結果
+初期データ
+[{Pat Patterson 37} {Tracy Bobbert 23} {Fred Fredson 18}]
+姓(LastName)でソート
+[{Tracy Bobbert 23} {Fred Fredson 18} {Pat Patterson 37}]
+```
+
+sort.Sliceに渡されるクロージャにはiとjの2個の引数しかないが、クロージャ内からはpeopleを参照できるので、フィールドLastNameによってソートできる。これを「peopleはクロージャによって**補足された**」などということがある。次に同じようにフィールドAgeでソートする。
+
+```go
+func main() {
+	people := []Person{
+		{"Pat", "Patterson", 37},
+		{"Tracy", "Bobbert", 23},
+		{"Fred", "Fredson", 18},
+	}
+	fmt.Println("初期データ")
+	fmt.Println(people)
+
+	// 姓(LastName)でソート
+	sort.Slice(people, func(i int, j int) bool {
+		return people[i].Age < people[j].Age
+	})
+	fmt.Println("年齢(Age)でソート")
+	fmt.Println(people)
+}
+```
+
+```bash:実行結果
+初期データ
+[{Pat Patterson 37} {Tracy Bobbert 23} {Fred Fredson 18}]
+年齢(Age)でソート
+[{Fred Fredson 18} {Tracy Bobbert 23} {Pat Patterson 37}]
+```
+
+スライスpeopleはsort.Sliceの呼び出しによって変更される。
+
+### 関数から関数を返す
+クロージャを使って関数の状態を別の関数に渡せるだけでなく、関数からクロージャを返すこともできる。それを示すのに、「掛け算をする関数を返す関数」を書く。
+
+```go
+func makeMult(base int) func(int) int {
+  return func(factor int) int {
+		return base * factor
+	}
+}
+
+
+func main() {
+	twoBase := makeMult(2) // 2倍する関数
+	threeBase := makeMult(3)  // 3倍する関数
+	for i := 0; i <= 5; i++ {
+		fmt.Print(i, ": ", twoBase(i), ", ", threeBase(i), "\n")
+	}
+}
+```
+
+関数makeMultがクロージャを返しており、このプログラムを実行すると次のような出力が得られる。
+
+```bash:実行結果
+0: 0, 0
+1: 2, 3
+2: 4, 6
+3: 6, 9
+4: 8, 12
+5: 10, 15
+```
+
+## defer
+プログラムでは、ファイルやネットワーク接続といった一時的なリソースを作成することがよくあるが、そういったリソースは後始末(クリーンアップ)が必要になる。この後始末は必ず行わなければならない。関数にいくつ出口があろうが、関数が正常終了使用が異常終了使用が関係ない。Go言語では、この後始末のコードはキーワードdeferを使って関数に付与する。
+
+deferを使ってリソースを解放する方法をみる。ファイルの内容を表示するUnixユーティリティcatの簡易版を作成する。
 
 
