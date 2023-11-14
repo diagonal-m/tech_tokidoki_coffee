@@ -2,7 +2,7 @@
 title: Clean Architecture備忘録vol.1
 date: '2023-07-03'
 tags: ['architebure', 'clean architecure']
-draft: false
+draft: true
 summary: 'Clean Architecture~達人に学ぶソフトウェアの構造と設計~を読んでの備忘録vol.1'
 ---
 
@@ -97,7 +97,6 @@ summary: 'Clean Architecture~達人に学ぶソフトウェアの構造と設計
 
 > コンポーネントのユーザーに対して、実際には使われないものへの依存を強要してはいけない。
 
-
 ### 非循環依存関係の原則
 
 > コンポーネントの依存グラフに循環依存があってはいけない。
@@ -109,6 +108,3 @@ summary: 'Clean Architecture~達人に学ぶソフトウェアの構造と設計
 ### 安定度・抽象度等価の原則
 
 > コンポーネントの抽象度は、その安定度と同程度でなければならない
-
-
-

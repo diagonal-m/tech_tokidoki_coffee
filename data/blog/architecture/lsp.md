@@ -2,7 +2,7 @@
 title: SOLID原則を理解したい~リスコフの置換原則編~
 date: '2023-07-09'
 tags: ['architecture', 'solid']
-draft: false
+draft: true
 summary: 'SOLID原則についてそれぞれ理解を深めたい記事'
 ---
 

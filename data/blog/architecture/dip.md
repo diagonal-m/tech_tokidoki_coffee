@@ -2,7 +2,7 @@
 title: SOLID原則を理解したい~依存関係逆転の原則編~
 date: '2023-07-09'
 tags: ['architecture', 'solid']
-draft: false
+draft: true
 summary: 'SOLID原則についてそれぞれ理解を深めたい記事'
 ---
 
@@ -80,10 +80,10 @@ public class Main {
     public static void main(String[] args) {
         // 具体的なファクトリを作成
         ServiceFactory factory = new ServiceFactoryImpl();
-        
+
         // アプリケーションを作成し、具体的なファクトリを渡す
         Application app = new Application(factory);
-        
+
         // アプリケーションの動作を開始
         app.doSomething();  // "Executing ConcreteImpl" と表示される
     }

@@ -2,7 +2,7 @@
 title: SOLID原則を理解したい~オープン・クローズドの原則編~
 date: '2023-07-08'
 tags: ['architecture', 'solid']
-draft: false
+draft: true
 summary: 'SOLID原則についてそれぞれ理解を深めたい記事'
 ---
 

@@ -2,7 +2,7 @@
 title: CPU、メモリ、I/O
 date: '2023-06-26'
 tags: ['computer science']
-draft: false
+draft: true
 summary: 'コンピュータの内部構造(CPU、メモリ、I/O)を理解する'
 ---
 
