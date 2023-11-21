@@ -8,7 +8,7 @@ const siteMetadata = {
   description: 'ギークギークしてないエンジニアのテックブログ、時々珈琲',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
+  siteUrl: 'https://tech-tokidoki-coffee.netlify.app/',
   siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
   siteLogo: '/static/images/ametokidokicoffee.png',
   image: '/static/images/ametokidokicoffee.png',
