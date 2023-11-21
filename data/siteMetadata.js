@@ -5,7 +5,7 @@ const siteMetadata = {
   title: 'Tech時々珈琲',
   author: 'satoichi',
   headerTitle: 'Tech時々珈琲',
-  description: 'コーヒー好きエンジニアのテックブログ、時々珈琲',
+  description: 'ギークギークしてないエンジニアのテックブログ、時々珈琲',
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://tailwind-nextjs-starter-blog.vercel.app',
