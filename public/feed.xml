@@ -2,12 +2,23 @@
   <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
       <title>Tech時々珈琲</title>
-      <link>https://tech-tokidoki-coffee.netlify.app/</link>
-      <description>コーヒー好きエンジニアのテックブログ、時々珈琲</description>
+      <link>https://tech-tokidoki-coffee.netlify.app/blog</link>
+      <description>ギークギークしてないエンジニアのテックブログ、時々珈琲</description>
       <language>en-us</language>
       <managingEditor>address@yoursite.com (satoichi)</managingEditor>
       <webMaster>address@yoursite.com (satoichi)</webMaster>
-      <lastBuildDate>Mon, 03 Jul 2023 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Fri, 01 Dec 2023 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://tech-tokidoki-coffee.netlify.app/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://tech-tokidoki-coffee.netlify.app/blog/introduction</guid>
+    <title>いきなり珈琲</title>
+    <link>https://tech-tokidoki-coffee.netlify.app/blog/introduction</link>
+    <description>Tech時々珈琲のファースト記事。コーヒーのことと、このブログのことと、管理人のことと。</description>
+    <pubDate>Fri, 01 Dec 2023 00:00:00 GMT</pubDate>
+    <author>address@yoursite.com (satoichi)</author>
+    <category>blog</category><category>coffee</category>
+  </item>
+
     </channel>
   </rss>

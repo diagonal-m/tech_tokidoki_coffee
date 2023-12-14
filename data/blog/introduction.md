@@ -1,7 +1,7 @@
 ---
 title: いきなり珈琲
 date: '2023-12-01'
-tags: ['bolg', 'coffee']
+tags: ['blog', 'coffee']
 draft: false
 summary: 'Tech時々珈琲のファースト記事。コーヒーのことと、このブログのことと、管理人のことと。'
 ---
