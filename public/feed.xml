@@ -20,5 +20,15 @@
     <category>blog</category><category>coffee</category>
   </item>
 
+  <item>
+    <guid>https://tech-tokidoki-coffee.com/blog/design/solid/single_responsibility</guid>
+    <title>コーヒーで理解する単一責任の原則</title>
+    <link>https://tech-tokidoki-coffee.com/blog/design/solid/single_responsibility</link>
+    <description>違反例と適用例で単一責任の原則の理解を深めるための記事</description>
+    <pubDate>Tue, 19 Dec 2023 00:00:00 GMT</pubDate>
+    <author>address@yoursite.com (satoichi)</author>
+    <category>design</category><category>solid</category><category>srp</category>
+  </item>
+
     </channel>
   </rss>
