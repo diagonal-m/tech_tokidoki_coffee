@@ -1,5 +1,5 @@
 ---
-title: コーヒーで理解するオープン・クローズドの原則
+title: オープン・クローズドの原則を浅くでいいから理解したい
 date: '2023-12-21'
 tags: ['design', 'solid', 'ocp']
 draft: false
