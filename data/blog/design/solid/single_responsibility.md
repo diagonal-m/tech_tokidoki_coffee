@@ -1,5 +1,5 @@
 ---
-title: コーヒーで理解する単一責任の原則
+title: 単一責任の原則を浅くでいいから理解したい
 date: '2023-12-19'
 tags: ['design', 'solid', 'srp']
 draft: false
