@@ -21,8 +21,18 @@
   </item>
 
   <item>
+    <guid>https://tech-tokidoki-coffee.com/blog/design/solid/liskov_substitution</guid>
+    <title>リスコフの置換原則を浅くでいいから理解したい</title>
+    <link>https://tech-tokidoki-coffee.com/blog/design/solid/liskov_substitution</link>
+    <description>違反例と適用例でリスコフの置換原則を深めるための記事</description>
+    <pubDate>Mon, 25 Dec 2023 00:00:00 GMT</pubDate>
+    <author>address@yoursite.com (satoichi)</author>
+    <category>design</category><category>solid</category><category>lsp</category>
+  </item>
+
+  <item>
     <guid>https://tech-tokidoki-coffee.com/blog/design/solid/open_closed</guid>
-    <title>コーヒーで理解するオープン・クローズドの原則</title>
+    <title>オープン・クローズドの原則を浅くでいいから理解したい</title>
     <link>https://tech-tokidoki-coffee.com/blog/design/solid/open_closed</link>
     <description>コーヒーを題材に違反例と適用例でオープン・クローズドの原則の理解を深めるための記事</description>
     <pubDate>Thu, 21 Dec 2023 00:00:00 GMT</pubDate>
@@ -32,7 +42,7 @@
 
   <item>
     <guid>https://tech-tokidoki-coffee.com/blog/design/solid/single_responsibility</guid>
-    <title>コーヒーで理解する単一責任の原則</title>
+    <title>単一責任の原則を浅くでいいから理解したい</title>
     <link>https://tech-tokidoki-coffee.com/blog/design/solid/single_responsibility</link>
     <description>コーヒーを題材に違反例と適用例で単一責任の原則の理解を深めるための記事</description>
     <pubDate>Tue, 19 Dec 2023 00:00:00 GMT</pubDate>
