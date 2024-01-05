@@ -21,8 +21,18 @@
   </item>
 
   <item>
+    <guid>https://tech-tokidoki-coffee.com/blog/design/solid/interface_segregation</guid>
+    <title>インタフェース分離の原則を浅く理解する</title>
+    <link>https://tech-tokidoki-coffee.com/blog/design/solid/interface_segregation</link>
+    <description>違反例と適用例でインタフェース分離の原則を浅く理解するための記事</description>
+    <pubDate>Sat, 06 Jan 2024 00:00:00 GMT</pubDate>
+    <author>address@yoursite.com (satoichi)</author>
+    <category>design</category><category>solid</category><category>isp</category>
+  </item>
+
+  <item>
     <guid>https://tech-tokidoki-coffee.com/blog/design/solid/liskov_substitution</guid>
-    <title>リスコフの置換原則を浅くでいいから理解したい</title>
+    <title>リスコフの置換原則を浅く理解する</title>
     <link>https://tech-tokidoki-coffee.com/blog/design/solid/liskov_substitution</link>
     <description>違反例と適用例でリスコフの置換原則を深めるための記事</description>
     <pubDate>Mon, 25 Dec 2023 00:00:00 GMT</pubDate>
@@ -32,22 +42,12 @@
 
   <item>
     <guid>https://tech-tokidoki-coffee.com/blog/design/solid/open_closed</guid>
-    <title>オープン・クローズドの原則を浅くでいいから理解したい</title>
+    <title>オープン・クローズドの原則を浅く理解する</title>
     <link>https://tech-tokidoki-coffee.com/blog/design/solid/open_closed</link>
     <description>コーヒーを題材に違反例と適用例でオープン・クローズドの原則の理解を深めるための記事</description>
     <pubDate>Thu, 21 Dec 2023 00:00:00 GMT</pubDate>
     <author>address@yoursite.com (satoichi)</author>
     <category>design</category><category>solid</category><category>ocp</category>
-  </item>
-
-  <item>
-    <guid>https://tech-tokidoki-coffee.com/blog/design/solid/single_responsibility</guid>
-    <title>単一責任の原則を浅くでいいから理解したい</title>
-    <link>https://tech-tokidoki-coffee.com/blog/design/solid/single_responsibility</link>
-    <description>コーヒーを題材に違反例と適用例で単一責任の原則の理解を深めるための記事</description>
-    <pubDate>Tue, 19 Dec 2023 00:00:00 GMT</pubDate>
-    <author>address@yoursite.com (satoichi)</author>
-    <category>design</category><category>solid</category><category>srp</category>
   </item>
 
     </channel>
