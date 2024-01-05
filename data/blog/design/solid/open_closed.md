@@ -1,5 +1,5 @@
 ---
-title: オープン・クローズドの原則を浅くでいいから理解したい
+title: オープン・クローズドの原則を浅く理解する
 date: '2023-12-21'
 tags: ['design', 'solid', 'ocp']
 draft: false
