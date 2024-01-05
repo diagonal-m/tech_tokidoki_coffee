@@ -1,6 +1,6 @@
 ---
 title: インタフェース分離の原則を浅く理解する
-date: '2023-12-25'
+date: '2024-01-06'
 tags: ['design', 'solid', 'isp']
 draft: false
 summary: '違反例と適用例でインタフェース分離の原則を浅く理解するための記事'
