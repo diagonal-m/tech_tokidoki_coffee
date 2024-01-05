@@ -1,5 +1,5 @@
 ---
-title: リスコフの置換原則を浅くでいいから理解したい
+title: リスコフの置換原則を浅く理解する
 date: '2023-12-25'
 tags: ['design', 'solid', 'lsp']
 draft: false
