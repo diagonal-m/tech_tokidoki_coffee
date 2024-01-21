@@ -21,6 +21,16 @@
   </item>
 
   <item>
+    <guid>https://tech-tokidoki-coffee.com/blog/design/architecture/アーキテクチャ入門</guid>
+    <title>個人的アプリケーションアーキテクチャ入門</title>
+    <link>https://tech-tokidoki-coffee.com/blog/design/architecture/アーキテクチャ入門</link>
+    <description>3層アーキテクチャ、レイヤードアーキテクチャ、ヘキサゴナル・オニオン・クリーンアーキテクチャの個人的入門記事</description>
+    <pubDate>Sun, 21 Jan 2024 00:00:00 GMT</pubDate>
+    <author>address@yoursite.com (satoichi)</author>
+    <category>design</category><category>architecture</category>
+  </item>
+
+  <item>
     <guid>https://tech-tokidoki-coffee.com/blog/design/solid/interface_segregation</guid>
     <title>インタフェース分離の原則を浅く理解する</title>
     <link>https://tech-tokidoki-coffee.com/blog/design/solid/interface_segregation</link>
