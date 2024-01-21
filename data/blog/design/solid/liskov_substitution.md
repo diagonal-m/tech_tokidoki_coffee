@@ -1,5 +1,5 @@
 ---
-title: リスコフの置換原則を浅く理解する
+title: 個人的SOLID原則入門~LSP編~
 date: '2023-12-25'
 tags: ['design', 'solid', 'lsp']
 draft: false

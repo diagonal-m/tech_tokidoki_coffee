@@ -1,5 +1,5 @@
 ---
-title: オープン・クローズドの原則を浅く理解する
+title: 個人的SOLID原則入門~OCP編~
 date: '2023-12-21'
 tags: ['design', 'solid', 'ocp']
 draft: false
