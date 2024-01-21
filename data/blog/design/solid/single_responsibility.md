@@ -1,5 +1,5 @@
 ---
-title: 単一責任の原則を浅く理解する
+title: 個人的SOLID原則入門~SRP編~
 tags: ['design', 'solid', 'srp']
 draft: false
 summary: 'コーヒーを題材に違反例と適用例で単一責任の原則の理解を深めるための記事'

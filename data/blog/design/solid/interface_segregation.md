@@ -1,5 +1,5 @@
 ---
-title: インタフェース分離の原則を浅く理解する
+title: 個人的SOLID原則入門~ISP編~
 date: '2024-01-06'
 tags: ['design', 'solid', 'isp']
 draft: false
