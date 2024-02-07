@@ -70,5 +70,15 @@
     <category>design</category><category>solid</category><category>ocp</category>
   </item>
 
+  <item>
+    <guid>https://tech-tokidoki-coffee.com/blog/design/design_pattern/template_method</guid>
+    <title>個人的デザインパターン入門~TemplateMethod 編~</title>
+    <link>https://tech-tokidoki-coffee.com/blog/design/design_pattern/template_method</link>
+    <description>TemplateMethodの個人的入門記事</description>
+    <pubDate>Thu, 01 Feb 2024 00:00:00 GMT</pubDate>
+    <author>address@yoursite.com (satoichi)</author>
+    <category>design</category><category>design pattern(振る舞い)</category><category>template method</category>
+  </item>
+
     </channel>
   </rss>
