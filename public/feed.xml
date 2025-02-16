@@ -5,19 +5,19 @@
       <link>https://tech-tokidoki-coffee.com/blog</link>
       <description>ギークギークしてないエンジニアのテックブログ、時々珈琲</description>
       <language>en-us</language>
-      <managingEditor>address@yoursite.com (satoichi)</managingEditor>
-      <webMaster>address@yoursite.com (satoichi)</webMaster>
-      <lastBuildDate>Fri, 01 Dec 2023 00:00:00 GMT</lastBuildDate>
+      <managingEditor>address@yoursite.com (Ringto)</managingEditor>
+      <webMaster>address@yoursite.com (Ringto)</webMaster>
+      <lastBuildDate>Sat, 15 Feb 2025 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://tech-tokidoki-coffee.com/feed.xml" rel="self" type="application/rss+xml"/>
       
   <item>
-    <guid>https://tech-tokidoki-coffee.com/blog/introduction</guid>
-    <title>いきなり珈琲</title>
-    <link>https://tech-tokidoki-coffee.com/blog/introduction</link>
-    <description>Tech時々珈琲のファースト記事。コーヒーのことと、このブログのことと、管理人のことと。</description>
-    <pubDate>Fri, 01 Dec 2023 00:00:00 GMT</pubDate>
-    <author>address@yoursite.com (satoichi)</author>
-    <category>blog</category><category>coffee</category>
+    <guid>https://tech-tokidoki-coffee.com/blog/poem/test</guid>
+    <title>テスト</title>
+    <link>https://tech-tokidoki-coffee.com/blog/poem/test</link>
+    <description>テスト</description>
+    <pubDate>Sat, 15 Feb 2025 00:00:00 GMT</pubDate>
+    <author>address@yoursite.com (Ringto)</author>
+    <category>blog</category>
   </item>
 
   <item>
@@ -25,29 +25,39 @@
     <title>2023年度のエンジニアとしての成長を言語化してみる</title>
     <link>https://tech-tokidoki-coffee.com/blog/poem/growth_2023</link>
     <description>新卒3年目を迎える前に多少はしたであろうエンジニアとしての成長について考えてみる</description>
-    <pubDate>Sun, 11 Feb 2024 00:00:00 GMT</pubDate>
-    <author>address@yoursite.com (satoichi)</author>
+    <pubDate>Fri, 15 Mar 2024 00:00:00 GMT</pubDate>
+    <author>address@yoursite.com (Ringto)</author>
     <category>blog</category><category>poem</category>
   </item>
 
   <item>
-    <guid>https://tech-tokidoki-coffee.com/blog/design/architecture/アーキテクチャ入門</guid>
-    <title>個人的アプリケーションアーキテクチャ入門</title>
-    <link>https://tech-tokidoki-coffee.com/blog/design/architecture/アーキテクチャ入門</link>
-    <description>3層アーキテクチャ、レイヤードアーキテクチャ、ヘキサゴナル・オニオン・クリーンアーキテクチャの個人的入門記事</description>
-    <pubDate>Sun, 21 Jan 2024 00:00:00 GMT</pubDate>
-    <author>address@yoursite.com (satoichi)</author>
-    <category>design</category><category>architecture</category>
+    <guid>https://tech-tokidoki-coffee.com/blog/design/design_pattern/abstract_factory</guid>
+    <title>個人的デザインパターン入門~Abstract Factory 編~</title>
+    <link>https://tech-tokidoki-coffee.com/blog/design/design_pattern/abstract_factory</link>
+    <description>Abstract Factoryの個人的入門記事</description>
+    <pubDate>Sat, 02 Mar 2024 00:00:00 GMT</pubDate>
+    <author>address@yoursite.com (Ringto)</author>
+    <category>design</category><category>design pattern(生成)</category><category>abstract factory</category>
   </item>
 
   <item>
-    <guid>https://tech-tokidoki-coffee.com/blog/design/design_pattern/adapter</guid>
-    <title>個人的デザインパターン入門~Adapter 編~</title>
-    <link>https://tech-tokidoki-coffee.com/blog/design/design_pattern/adapter</link>
-    <description>Adapterの個人的入門記事</description>
-    <pubDate>Thu, 08 Feb 2024 00:00:00 GMT</pubDate>
-    <author>address@yoursite.com (satoichi)</author>
-    <category>design</category><category>design pattern(構造)</category><category>Adapter</category>
+    <guid>https://tech-tokidoki-coffee.com/blog/design/design_pattern/builder</guid>
+    <title>個人的デザインパターン入門~Builder 編~</title>
+    <link>https://tech-tokidoki-coffee.com/blog/design/design_pattern/builder</link>
+    <description>Builderの個人的入門記事</description>
+    <pubDate>Fri, 01 Mar 2024 00:00:00 GMT</pubDate>
+    <author>address@yoursite.com (Ringto)</author>
+    <category>design</category><category>design pattern(生成)</category><category>builder</category>
+  </item>
+
+  <item>
+    <guid>https://tech-tokidoki-coffee.com/blog/design/design_pattern/prototype</guid>
+    <title>個人的デザインパターン入門~Prototype 編~</title>
+    <link>https://tech-tokidoki-coffee.com/blog/design/design_pattern/prototype</link>
+    <description>Prototypeの個人的入門記事</description>
+    <pubDate>Thu, 29 Feb 2024 00:00:00 GMT</pubDate>
+    <author>address@yoursite.com (Ringto)</author>
+    <category>design</category><category>design pattern(生成)</category><category>prototype</category>
   </item>
 
   <item>
@@ -56,7 +66,7 @@
     <link>https://tech-tokidoki-coffee.com/blog/design/design_pattern/facade</link>
     <description>Facadeの個人的入門記事</description>
     <pubDate>Sat, 10 Feb 2024 00:00:00 GMT</pubDate>
-    <author>address@yoursite.com (satoichi)</author>
+    <author>address@yoursite.com (Ringto)</author>
     <category>design</category><category>design pattern(構造)</category><category>facade</category>
   </item>
 
@@ -66,7 +76,7 @@
     <link>https://tech-tokidoki-coffee.com/blog/design/design_pattern/factory_method</link>
     <description>Factory Methodの個人的入門記事</description>
     <pubDate>Sat, 10 Feb 2024 00:00:00 GMT</pubDate>
-    <author>address@yoursite.com (satoichi)</author>
+    <author>address@yoursite.com (Ringto)</author>
     <category>design</category><category>design pattern(生成)</category><category>factory method</category>
   </item>
 
@@ -76,8 +86,18 @@
     <link>https://tech-tokidoki-coffee.com/blog/design/design_pattern/iterator</link>
     <description>Iteratorの個人的入門記事</description>
     <pubDate>Fri, 09 Feb 2024 00:00:00 GMT</pubDate>
-    <author>address@yoursite.com (satoichi)</author>
+    <author>address@yoursite.com (Ringto)</author>
     <category>design</category><category>design pattern(振る舞い)</category><category>iterator</category>
+  </item>
+
+  <item>
+    <guid>https://tech-tokidoki-coffee.com/blog/design/design_pattern/adapter</guid>
+    <title>個人的デザインパターン入門~Adapter 編~</title>
+    <link>https://tech-tokidoki-coffee.com/blog/design/design_pattern/adapter</link>
+    <description>Adapterの個人的入門記事</description>
+    <pubDate>Thu, 08 Feb 2024 00:00:00 GMT</pubDate>
+    <author>address@yoursite.com (Ringto)</author>
+    <category>design</category><category>design pattern(構造)</category><category>Adapter</category>
   </item>
 
   <item>
@@ -86,7 +106,7 @@
     <link>https://tech-tokidoki-coffee.com/blog/design/design_pattern/singleton</link>
     <description>Singletonの個人的入門記事</description>
     <pubDate>Wed, 07 Feb 2024 00:00:00 GMT</pubDate>
-    <author>address@yoursite.com (satoichi)</author>
+    <author>address@yoursite.com (Ringto)</author>
     <category>design</category><category>design pattern(生成)</category><category>singleton</category>
   </item>
 
@@ -96,8 +116,18 @@
     <link>https://tech-tokidoki-coffee.com/blog/design/design_pattern/template_method</link>
     <description>TemplateMethodの個人的入門記事</description>
     <pubDate>Thu, 01 Feb 2024 00:00:00 GMT</pubDate>
-    <author>address@yoursite.com (satoichi)</author>
+    <author>address@yoursite.com (Ringto)</author>
     <category>design</category><category>design pattern(振る舞い)</category><category>template method</category>
+  </item>
+
+  <item>
+    <guid>https://tech-tokidoki-coffee.com/blog/design/architecture/アーキテクチャ入門</guid>
+    <title>個人的アプリケーションアーキテクチャ入門</title>
+    <link>https://tech-tokidoki-coffee.com/blog/design/architecture/アーキテクチャ入門</link>
+    <description>3層アーキテクチャ、レイヤードアーキテクチャ、ヘキサゴナル・オニオン・クリーンアーキテクチャの個人的入門記事</description>
+    <pubDate>Sun, 21 Jan 2024 00:00:00 GMT</pubDate>
+    <author>address@yoursite.com (Ringto)</author>
+    <category>design</category><category>architecture</category>
   </item>
 
   <item>
@@ -106,7 +136,7 @@
     <link>https://tech-tokidoki-coffee.com/blog/design/solid/dependency_inversion</link>
     <description>違反例と適用例で依存性逆転の原則を浅く理解するための記事</description>
     <pubDate>Fri, 19 Jan 2024 00:00:00 GMT</pubDate>
-    <author>address@yoursite.com (satoichi)</author>
+    <author>address@yoursite.com (Ringto)</author>
     <category>design</category><category>solid</category><category>dip</category>
   </item>
 
@@ -116,7 +146,7 @@
     <link>https://tech-tokidoki-coffee.com/blog/design/solid/interface_segregation</link>
     <description>違反例と適用例でインタフェース分離の原則を浅く理解するための記事</description>
     <pubDate>Sat, 06 Jan 2024 00:00:00 GMT</pubDate>
-    <author>address@yoursite.com (satoichi)</author>
+    <author>address@yoursite.com (Ringto)</author>
     <category>design</category><category>solid</category><category>isp</category>
   </item>
 
@@ -126,7 +156,7 @@
     <link>https://tech-tokidoki-coffee.com/blog/design/solid/liskov_substitution</link>
     <description>違反例と適用例でリスコフの置換原則を深めるための記事</description>
     <pubDate>Mon, 25 Dec 2023 00:00:00 GMT</pubDate>
-    <author>address@yoursite.com (satoichi)</author>
+    <author>address@yoursite.com (Ringto)</author>
     <category>design</category><category>solid</category><category>lsp</category>
   </item>
 
@@ -136,7 +166,7 @@
     <link>https://tech-tokidoki-coffee.com/blog/design/solid/open_closed</link>
     <description>コーヒーを題材に違反例と適用例でオープン・クローズドの原則の理解を深めるための記事</description>
     <pubDate>Thu, 21 Dec 2023 00:00:00 GMT</pubDate>
-    <author>address@yoursite.com (satoichi)</author>
+    <author>address@yoursite.com (Ringto)</author>
     <category>design</category><category>solid</category><category>ocp</category>
   </item>
 
@@ -146,8 +176,18 @@
     <link>https://tech-tokidoki-coffee.com/blog/design/solid/single_responsibility</link>
     <description>コーヒーを題材に違反例と適用例で単一責任の原則の理解を深めるための記事</description>
     <pubDate>Tue, 19 Dec 2023 00:00:00 GMT</pubDate>
-    <author>address@yoursite.com (satoichi)</author>
+    <author>address@yoursite.com (Ringto)</author>
     <category>design</category><category>solid</category><category>srp</category>
+  </item>
+
+  <item>
+    <guid>https://tech-tokidoki-coffee.com/blog/introduction</guid>
+    <title>いきなり珈琲</title>
+    <link>https://tech-tokidoki-coffee.com/blog/introduction</link>
+    <description>Tech時々珈琲のファースト記事。コーヒーのことと、このブログのことと、管理人のことと。</description>
+    <pubDate>Fri, 01 Dec 2023 00:00:00 GMT</pubDate>
+    <author>address@yoursite.com (Ringto)</author>
+    <category>blog</category><category>coffee</category>
   </item>
 
     </channel>

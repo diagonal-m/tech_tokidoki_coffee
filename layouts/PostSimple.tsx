@@ -2,10 +2,10 @@ import { ReactNode } from 'react'
 import { formatDate } from 'pliny/utils/formatDate'
 import { CoreContent } from 'pliny/utils/contentlayer'
 import type { Blog } from 'contentlayer/generated'
+import Comments from '@/components/Comments'
 import Link from '@/components/Link'
 import PageTitle from '@/components/PageTitle'
 import SectionContainer from '@/components/SectionContainer'
-import { BlogSEO } from '@/components/SEO'
 import siteMetadata from '@/data/siteMetadata'
 import ScrollTopAndComment from '@/components/ScrollTopAndComment'
 
@@ -17,11 +17,10 @@ interface LayoutProps {
 }
 
 export default function PostLayout({ content, next, prev, children }: LayoutProps) {
-  const { path, date, title } = content
+  const { path, slug, date, title } = content
 
   return (
     <SectionContainer>
-      <BlogSEO url={`${siteMetadata.siteUrl}/${path}`} {...content} />
       <ScrollTopAndComment />
       <article>
         <div>
@@ -30,7 +29,7 @@ export default function PostLayout({ content, next, prev, children }: LayoutProp
               <dl>
                 <div>
                   <dt className="sr-only">Published on</dt>
-                  <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
+                  <dd className="text-base leading-6 font-medium text-gray-500 dark:text-gray-400">
                     <time dateTime={date}>{formatDate(date, siteMetadata.locale)}</time>
                   </dd>
                 </div>
@@ -40,13 +39,18 @@ export default function PostLayout({ content, next, prev, children }: LayoutProp
               </div>
             </div>
           </header>
-          <div className="grid-rows-[auto_1fr] divide-y divide-gray-200 pb-8 dark:divide-gray-700 xl:divide-y-0">
-            <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
-              <div className="b-8 prose max-w-none pt-10 dark:prose-dark">{children}</div>
+          <div className="grid-rows-[auto_1fr] divide-y divide-gray-200 pb-8 xl:divide-y-0 dark:divide-gray-700">
+            <div className="divide-y divide-gray-200 xl:col-span-3 xl:row-span-2 xl:pb-0 dark:divide-gray-700">
+              <div className="prose dark:prose-invert max-w-none pt-10 pb-8">{children}</div>
             </div>
+            {siteMetadata.comments && (
+              <div className="pt-6 pb-6 text-center text-gray-700 dark:text-gray-300" id="comment">
+                <Comments slug={slug} />
+              </div>
+            )}
             <footer>
               <div className="flex flex-col text-sm font-medium sm:flex-row sm:justify-between sm:text-base">
-                {prev && (
+                {prev && prev.path && (
                   <div className="pt-4 xl:pt-8">
                     <Link
                       href={`/${prev.path}`}
@@ -57,7 +61,7 @@ export default function PostLayout({ content, next, prev, children }: LayoutProp
                     </Link>
                   </div>
                 )}
-                {next && (
+                {next && next.path && (
                   <div className="pt-4 xl:pt-8">
                     <Link
                       href={`/${next.path}`}
