@@ -1,7 +1,7 @@
 ---
 title: 個人的デザインパターン入門~Abstract Factory 編~
 date: '2024-03-02'
-tags: ['design', 'design pattern(生成)', 'abstract factory']
+tags: ['design', 'design pattern', 'abstract factory']
 draft: false
 summary: 'Abstract Factoryの個人的入門記事'
 ---

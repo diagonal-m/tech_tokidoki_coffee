@@ -1,7 +1,7 @@
 ---
 title: 個人的デザインパターン入門~Singleton 編~
 date: '2024-02-07'
-tags: ['design', 'design pattern(生成)', 'singleton']
+tags: ['design', 'design pattern', 'singleton']
 draft: false
 summary: 'Singletonの個人的入門記事'
 ---

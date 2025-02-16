@@ -1,7 +1,7 @@
 ---
 title: 個人的デザインパターン入門~Adapter 編~
 date: '2024-02-08'
-tags: ['design', 'design pattern(構造)', 'Adapter']
+tags: ['design', 'design pattern', 'Adapter']
 draft: false
 summary: 'Adapterの個人的入門記事'
 ---

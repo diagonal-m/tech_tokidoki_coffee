@@ -1,7 +1,7 @@
 ---
 title: 個人的デザインパターン入門~Factory Method 編~
 date: '2024-02-10'
-tags: ['design', 'design pattern(生成)', 'factory method']
+tags: ['design', 'design pattern', 'factory method']
 draft: false
 summary: 'Factory Methodの個人的入門記事'
 ---

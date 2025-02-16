@@ -1,7 +1,7 @@
 ---
 title: 個人的デザインパターン入門~Builder 編~
 date: '2024-03-01'
-tags: ['design', 'design pattern(生成)', 'builder']
+tags: ['design', 'design pattern', 'builder']
 draft: false
 summary: 'Builderの個人的入門記事'
 ---

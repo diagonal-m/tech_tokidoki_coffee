@@ -1,7 +1,7 @@
 ---
 title: 個人的デザインパターン入門~Prototype 編~
 date: '2024-02-29'
-tags: ['design', 'design pattern(生成)', 'prototype']
+tags: ['design', 'design pattern', 'prototype']
 draft: false
 summary: 'Prototypeの個人的入門記事'
 ---

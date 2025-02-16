@@ -1,7 +1,7 @@
 ---
 title: 個人的デザインパターン入門~TemplateMethod 編~
 date: '2024-02-01'
-tags: ['design', 'design pattern(振る舞い)', 'template method']
+tags: ['design', 'design pattern', 'template method']
 draft: false
 summary: 'TemplateMethodの個人的入門記事'
 ---
